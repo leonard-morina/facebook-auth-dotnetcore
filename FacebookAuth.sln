@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{419A6ACE-0419-4315-A6FB-B0E63D39432E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{15EA4737-125B-4E6E-A806-E13B7EBCDCCF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAuth.Core", "src\FacebookAuth.Core\FacebookAuth.Core.csproj", "{6B3388E2-685F-4024-81FF-9E92C46F1453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacebookAuth.Utils", "src\FacebookAuth.Utils\FacebookAuth.Utils.csproj", "{B1112B81-9B41-48C3-A71C-DC5474A683AA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B3388E2-685F-4024-81FF-9E92C46F1453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B3388E2-685F-4024-81FF-9E92C46F1453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B3388E2-685F-4024-81FF-9E92C46F1453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B3388E2-685F-4024-81FF-9E92C46F1453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1112B81-9B41-48C3-A71C-DC5474A683AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1112B81-9B41-48C3-A71C-DC5474A683AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1112B81-9B41-48C3-A71C-DC5474A683AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1112B81-9B41-48C3-A71C-DC5474A683AA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6B3388E2-685F-4024-81FF-9E92C46F1453} = {419A6ACE-0419-4315-A6FB-B0E63D39432E}
+		{B1112B81-9B41-48C3-A71C-DC5474A683AA} = {419A6ACE-0419-4315-A6FB-B0E63D39432E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E26A72AE-5BD1-4414-B189-52AE1477E1E4}
+	EndGlobalSection
+EndGlobal

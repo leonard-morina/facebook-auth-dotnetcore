@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>Facebook.Auth.DotNetCore</PackageId>
+    <PackageId>FacebookAuth.DotNetCore</PackageId>
     <Title>FacebookAuth DotNetCore</Title>
     <Authors>FacebookAuth.DotNetCore</Authors>
     <RepositoryUrl>https://github.com/leonard-morina/facebook-auth-dotnetcore</RepositoryUrl>

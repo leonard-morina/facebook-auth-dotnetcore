@@ -8,12 +8,9 @@
     <Authors>FacebookAuth.DotNetCore</Authors>
     <RepositoryUrl>https://github.com/leonard-morina/facebook-auth-dotnetcore</RepositoryUrl>
     <PackageTags>Authentication, Facebook</PackageTags>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 
-    <Version Condition="'$(RELEASE_VERSION)' != ''">$(RELEASE_VERSION)</Version>
-    <VersionPrefix Condition="'$(RELEASE_VERSION)' == ''">0.0.1</VersionPrefix>
-    <VersionSuffix Condition="'$(RELEASE_VERSION)' == ''">$([System.DateTime]::UtcNow.ToString(`yyyyMMdd-HHmm`))</VersionSuffix>
-    
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

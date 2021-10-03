@@ -16,8 +16,17 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <TargetsForTfmSpecificBuildOutput>$(TargetsForTfmSpecificBuildOutput);CopyProjectReferencesToPackage</TargetsForTfmSpecificBuildOutput>
+  </PropertyGroup>
+  <Target Name="CopyProjectReferencesToPackage" DependsOnTargets="ResolveReferences">
+    <ItemGroup>
+      <BuildOutputInPackage Include="@(ReferenceCopyLocalPaths->WithMetadataValue('ReferenceSourceTarget', 'ProjectReference'))" />
+    </ItemGroup>
+  </Target>
+
   <ItemGroup>
-    <ProjectReference Include="..\FacebookAuth.Utils\FacebookAuth.Utils.csproj" Version="0.1.0" />
+    <ProjectReference Include="..\FacebookAuth.Utils\FacebookAuth.Utils.csproj" Version="0.1.0" PrivateAssets="All" />
     <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
   </ItemGroup>
 

@@ -39,11 +39,15 @@ namespace FacebookAuth.Core
                 JsonConvert.DeserializeObject<AuthTokenValidationResponse>(validAccessTokenResponse);
 
             var isValidAccessTokenObjectValid = ObjectValidator.Validate(validAccessToken);
-            if (!isValidAccessTokenObjectValid) return null; //throw new exception
-
-            return validAccessToken;
+            return !isValidAccessTokenObjectValid ? null : validAccessToken;
         }
 
+        /// <summary>
+        /// This function will authenticate the user on facebook via an access token
+        /// </summary>
+        /// <param name="accessToken">AccessToken that should come from Facebook</param>
+        /// <param name="fields">These are the field options which tell us which data to include. Example: id,email,first_name,last_name,name,gender,locale,birthday,picture</param>
+        /// <returns></returns>
         public async Task<AuthUserResponse> GetAuthenticatedUserInformationAsync(string accessToken, string fields)
         {
             var validAccessToken = await ValidateAccessTokenAsync(accessToken);
@@ -56,6 +60,12 @@ namespace FacebookAuth.Core
             return JsonConvert.DeserializeObject<AuthUserResponse>(userInfoResponse);
         }
 
+        /// <summary>
+        /// This function will authenticate the user on facebook via an access token
+        /// </summary>
+        /// <param name="accessToken">AccessToken that should come from Facebook</param>
+        /// <param name="fields">These are the field options which tell us which data to include. Example: list(id,email,first_name,last_name,name,gender,locale,birthday,picture)</param>
+        /// <returns></returns>
         public async Task<AuthUserResponse> GetAuthenticatedUserInformationAsync(string accessToken, IReadOnlyList<string> fields)
         {
             var validAccessToken = await ValidateAccessTokenAsync(accessToken);

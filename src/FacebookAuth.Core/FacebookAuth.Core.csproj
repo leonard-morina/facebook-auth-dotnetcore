@@ -18,7 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FacebookAuth.Utils\FacebookAuth.Utils.csproj" />
+    <ProjectReference Include="..\FacebookAuth.Utils\FacebookAuth.Utils.csproj" Version="0.1.0" />
   </ItemGroup>
 
 </Project>

@@ -2,7 +2,7 @@
 LeonardMorina.FacebookAuthDotNetCore
 -----------------------------------
 
-The purpose of this package is to create a wrapper over Facebook Api for Authentication.
+The purpose of this package is to create a wrapper over Facebook Api for Asp Net Core Web API.
 
 ### Installation
 
